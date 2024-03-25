@@ -1,0 +1,90 @@
+<section id="section-features"
+class="section--features"
+appIntersectionObserver
+[intersectionDebounce]="-30"
+(visibilityChange)="onVisibilityChanged($event)"
+[style.opacity]="status === 'Visible' ? 1 : 0"
+[ngClass]="{
+  fadeInUp: status === 'Visible'
+}"
+>
+  <div class="section__title">
+    <h3 class="font-fjalla">Servicio</h3>
+    <p>
+      Nuestro servicio es personalizado para mantener la seguridad de su divisa (moneda)
+    </p>
+  </div>
+  <div class="flex--horizontal">
+    <div class="features__left aligner flex--vertical">
+      <div class="flex--vertical fadeInLeft fadeInLeft--0">
+        <object
+          type="image/svg+xml"
+          data="assets/images/features-circle.svg"
+          class="svg"
+        ></object>
+        <p>
+          Realiza tu cotización de Dolar Euro online las 24 horas del día, mediante nuestro cotizador.
+        </p>
+      </div>
+      <div class="flex--vertical fadeInLeft fadeInLeft--1">
+        <object
+          type="image/svg+xml"
+          data="assets/images/features-polygon.svg"
+          class="svg"
+        ></object>
+        <p>
+          En caso de requerir asesoramiento, contáctanos por nuestros canales de atención al cliente.
+        </p>
+      </div>
+      <div class="flex--vertical fadeInLeft fadeInLeft--2">
+        <object
+          type="image/svg+xml"
+          data="assets/images/features-rec.svg"
+          class="svg"
+        ></object>
+        <p>
+          Compramos todo tipo de divisas (moneda) y te ofrecemos la mejor tasa de cambio del mercado local.
+        </p>
+      </div>
+    </div>
+    <img class="features__image" src="assets/images/features-image.webp" />
+    <div class="features__right aligner flex--vertical">
+      <div
+        class="flex--vertical fadeInRight fadeInRight--0"
+      >
+        <object
+          type="image/svg+xml"
+          data="assets/images/features-star.svg"
+          class="svg"
+        ></object>
+        <p>
+          Si deseas un servicio personalizado, contacta a nuestros representante para comunicarse contigo.
+        </p>
+      </div>
+      <div
+        class="flex--vertical fadeInRight fadeInRight--1"
+      >
+        <object
+          type="image/svg+xml"
+          data="assets/images/features-triangle.svg"
+          class="svg"
+        ></object>
+        <p>
+          Nuestro servicio es a nivel nacional, con cobertura en todo el territorio nacional.
+        </p>
+      </div>
+      <div
+        class="flex--vertical fadeInRight fadeInRight--2"
+      >
+        <object
+          type="image/svg+xml"
+          data="assets/images/features-rec.svg"
+          class="svg"
+        ></object>
+        <p>
+          Mejoramos la cotizacion de tu divisa (moneda) en caso de que encuentres una mejor tasa de cambio.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

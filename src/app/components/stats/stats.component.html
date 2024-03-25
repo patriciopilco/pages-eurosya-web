@@ -1,0 +1,27 @@
+<section id="section-stats" class="section--stats">
+  <div class="section__title">
+    <h3 class="font-fjalla">ESTADÍSTICAS EURO</h3>
+    <p>
+      Proporcionamos estadísticas en tiempo real para que pueda tomar decisiones informadas.
+    </p>
+  </div>
+
+
+  <div class="stats__block">
+    <div class="flex--horizontal">
+      <h5 class="stats__name">Variación de la divisa</h5>
+      <h4 class="font-fjalla stats__result">1.15</h4>
+    </div>
+    <div class="stats">
+      <canvas
+        baseChart
+        [type]="'line'"
+        [data]="dataSet3"
+        [options]="lineChartOptions"
+        [legend]="false"
+        height="100"
+      >
+      </canvas>
+    </div>
+  </div>
+</section>
