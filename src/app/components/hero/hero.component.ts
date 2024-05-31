@@ -14,14 +14,14 @@ export class HeroComponent {
   public supabase!: SupabaseClient;
 
   constructor(){
-  this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
-  this.getNews()
+  //this.supabase = createClient(environment.supabaseUrl, environment.supabaseKey);
+  //this.getNews()
   }
 
   async getNews() {
     try{
     const { data, error } = await this.supabase.from('clients').select('*')
-    console.log(this.supabase)
+    console.log('*************************************')
     console.log(data)
     }
     catch(error){
