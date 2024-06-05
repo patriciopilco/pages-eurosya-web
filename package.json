@@ -25,6 +25,7 @@
     "@fortawesome/angular-fontawesome": "^0.14.1",
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@supabase/supabase-js": "^2.43.2",
     "@types/swiper": "^6.0.0",
     "chart.js": "^4.4.2",
     "date-fns": "^3.6.0",
