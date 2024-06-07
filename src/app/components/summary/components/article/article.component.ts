@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Article } from '../../../../models/article.interface';
 
+
 @Component({
   selector: 'app-article',
   standalone: true,
