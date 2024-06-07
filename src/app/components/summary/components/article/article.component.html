@@ -1,10 +1,8 @@
 <div class="card">
-  <a href="#" class="">
     <img class="" [src]="article.image" alt="">
     <div class="">
       <h4 class="">{{ article.title }}</h4>
-      <br>
-      <div class="content" [innerHTML]="article.content.substring(200,-1)"></div>
+       <div class="content" [innerHTML]="article.content.substring(180,-1).concat('...')"></div>
       <a [href]="article.link" class="link">
         Leer más
         <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
@@ -12,15 +10,14 @@
         </svg>
       </a>
     </div>
-  </a>
-</div>
+  </div>
 
 
 <style>
   .card {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 260px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -29,12 +26,14 @@
 
   .card img {
     width: 100%;
-    height: auto;
+    height: 125px;
     margin-bottom: 10px;
+    border-radius: 10px;
   }
 
   .card h4 {
-    font-size: 14px;
+    font-size: 12px;
+    height: 25px;
     margin-bottom: 10px;
   }
 
@@ -48,17 +47,19 @@
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
+    font-size: 12px;
   }
 
   .card svg {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     margin-left: 5px;
     vertical-align: middle;
   }
 
   .content {
     font-size: 14px;
+    text-align: justify;
     line-height: 1.5;
     margin-bottom: 10px;
   }

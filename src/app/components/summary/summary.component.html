@@ -1,8 +1,9 @@
 <section id="section-summary" class="section--summary">
-     <div >
-           <div *ngFor="let article of articlesList" style="display: flex; background-color: beige;">
-            <app-article [article]="article"></app-article>
-           </div>
-    </div>
+    <h4 class="title">Noticias del mundo </h4>
+            <swiper #swiper [config]="config" style="margin: 35px;">
+            <ng-template swiperSlide *ngFor="let article of articlesList">
+        <app-article [article]="article"></app-article>
+        </ng-template>
+            </swiper>
 </section>
 
