@@ -19,11 +19,27 @@ export class SummaryComponent {
    public articlesList: Article[] = [];
   @ViewChild('swiper', { static: false }) swiper?: SwiperComponent;
     config: SwiperOptions = {
-    slidesPerView: 3,
-    spaceBetween: 10,
-    navigation: false,
+    navigation: true,
+    pagination: { clickable: true },
     scrollbar: { draggable: true },
-    loop: true,
+    breakpoints: {
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+    },
   };
   constructor(private http: HttpClient) {
       this.consumeCloudflareService();
