@@ -6,7 +6,29 @@ import { CommonModule } from '@angular/common';
 import { SwiperModule } from 'swiper/angular';
 import { SwiperOptions } from 'swiper';
 import { SwiperComponent } from 'swiper/angular';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Virtual,
+  Zoom,
+  Autoplay,
+  Thumbs,
+  Controller,
+} from 'swiper';
 
+SwiperCore.use([
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Virtual,
+  Zoom,
+  Autoplay,
+  Thumbs,
+  Controller,
+]);
 @Component({
     selector: 'app-summary',
     standalone: true,
@@ -54,4 +76,10 @@ export class SummaryComponent {
     });
   }
 
+  slideNext() {
+    this.swiper?.swiperRef?.slideNext();
+  }
+  slidePrev() {
+    this.swiper?.swiperRef?.slidePrev();
+  }
 }
