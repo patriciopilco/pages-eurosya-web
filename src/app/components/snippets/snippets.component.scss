@@ -36,12 +36,13 @@
     flex: 1;
     align-self: flex-start;
   }
+
   &:before {
     position: absolute;
     background: radial-gradient(
-      #65508d 0%,
+      #aa8fd8, #9a9ae1, 0%,
       unquote("#efb5dd21") 30%,
-      #27253f 70%
+      #8aa7ec, #79b3f4, #69bff8, #52cffe 50%
     );
     content: "";
     top: 30px;

@@ -2,8 +2,7 @@
     <img class="" [src]="article.image" alt="">
     <div class="">
       <h4 class="">{{ article.title }}</h4>
-       <div class="content" [innerHTML]="article.content.substring(180,-1).concat('...')"></div>
-      <a [href]="article.link" class="link">
+        <a [href]="article.link" class="link">
         Leer más
         <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"/>
@@ -17,8 +16,8 @@
   .card {
     display: flex;
     flex-direction: column;
-    width: 230px;
-    border: 1px solid #ccc;
+    width: 200px;
+    background-color: azure;
     border-radius: 5px;
     padding: 10px;
   }
@@ -33,7 +32,8 @@
   .card h4 {
     font-size: 12px;
     height: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
   }
 
   .card p {
@@ -47,6 +47,7 @@
     text-decoration: none;
     font-weight: bold;
     font-size: 12px;
+    margin-top: 3rem;
   }
 
   .card svg {
